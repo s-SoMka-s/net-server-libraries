@@ -1,7 +1,7 @@
-﻿using Db.Types;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Net.Server.Libraries.Db.Types;
 
-namespace Db.Repository.Interfaces;
+namespace Net.Server.Libraries.Db.Repository.Interfaces;
 
 public interface ICrudFactory
 {

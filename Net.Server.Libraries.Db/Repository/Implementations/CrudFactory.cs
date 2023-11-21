@@ -1,8 +1,8 @@
-﻿using Db.Repository.Interfaces;
-using Db.Types;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Net.Server.Libraries.Db.Repository.Interfaces;
+using Net.Server.Libraries.Db.Types;
 
-namespace Db.Repository.Implementations;
+namespace Net.Server.Libraries.Db.Repository.Implementations;
 
 public class CrudFactory<TContext> : ICrudFactory where TContext : DbContext
 {

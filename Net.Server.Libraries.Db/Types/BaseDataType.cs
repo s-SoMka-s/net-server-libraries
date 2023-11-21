@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Db.Types;
+namespace Net.Server.Libraries.Db.Types;
 
 /// <summary>
 /// Базовый тип для всех моделей EF Core. Содержит такие поля как:

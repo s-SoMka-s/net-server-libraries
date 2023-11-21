@@ -1,7 +1,7 @@
-﻿using Db.Types;
+﻿using Net.Server.Libraries.Db.Types;
 using System.Linq.Expressions;
 
-namespace Db.Repository.Interfaces;
+namespace Net.Server.Libraries.Db.Repository.Interfaces;
 
 public interface IReadRepository<TEntity> : IRawRepository
     where TEntity : class, IBaseDataType

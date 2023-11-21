@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Db.Repository.Interfaces;
+namespace Net.Server.Libraries.Db.Repository.Interfaces;
 
 public interface IRawRepository
 {

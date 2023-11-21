@@ -1,4 +1,4 @@
-﻿namespace Db.Types;
+﻿namespace Net.Server.Libraries.Db.Types;
 public interface IBaseDataType
 {
     long Id { get; set; }

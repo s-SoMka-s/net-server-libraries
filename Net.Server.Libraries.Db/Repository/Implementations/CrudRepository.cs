@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using Db.Repository.Interfaces;
-using Db.Types;
+using Net.Server.Libraries.Db.Types;
+using Net.Server.Libraries.Db.Repository.Interfaces;
 
-namespace Db.Repository.Implementations;
+namespace Net.Server.Libraries.Db.Repository.Implementations;
 
 public class CrudRepository<TEntity> : ICrudRepository<TEntity> where TEntity : class, IBaseDataType
 {
@@ -50,11 +50,11 @@ public class CrudRepository<TEntity> : ICrudRepository<TEntity> where TEntity : 
 
     async Task<TEntity?> IReadRepository<TEntity>.FindAsync(long id)
     {
-        return await this.Set.SingleOrDefaultAsync(e => e.Id == id);
+        return await Set.SingleOrDefaultAsync(e => e.Id == id);
     }
 
     async Task<TEntity?> IReadRepository<TEntity>.FindAsync(Expression<Func<TEntity, bool>> predicate)
-    {        
+    {
         return await Set.SingleOrDefaultAsync(predicate);
     }
 
