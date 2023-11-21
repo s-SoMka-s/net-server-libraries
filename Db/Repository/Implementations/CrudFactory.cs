@@ -24,7 +24,7 @@ public class CrudFactory<TContext> : ICrudFactory where TContext : DbContext
             return provider.GetService(typesСompliance[type]) as ICrudRepository<TEntity>;
         }
 
-        return new CrudRepository<TEntity>(context);
+        return new CrudRepository<TEntity>(DefaultContext);
     }
 
     public DbContext Context => DefaultContext;
