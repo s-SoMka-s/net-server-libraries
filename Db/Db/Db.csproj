@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageId>Net.Server.Libraries.Db</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>s-SoMka-s</Authors>
+		<PackageDescription>This package adds a Net.Server.Libraries.Db</PackageDescription>
+		<RepositoryUrl>
+			https://github.com/s-SoMka-s/net-server-libraries
+		</RepositoryUrl>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+	</ItemGroup>
+
+</Project>
