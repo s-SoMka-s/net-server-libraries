@@ -15,10 +15,4 @@
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\Auth\Net.Server.Libraries.Auth.csproj" />
-	  <ProjectReference Include="..\Extensions\Net.Server.Libraries.Extensions.csproj" />
-	  <ProjectReference Include="..\Net.Server.Libraries.Db\Net.Server.Libraries.Db.csproj" />
-	</ItemGroup>
-
 </Project>
